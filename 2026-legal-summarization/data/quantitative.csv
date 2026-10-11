@@ -1,0 +1,71 @@
+# Quantitative data for the 2026 legal-summarization case study
+
+> Illustrative data. The protocol is pre-registered but the experiment has not been run. This data is a worked example of the case-study surface, not a record of a real experiment.
+
+## Schema
+
+Each row is one practitioner in one condition. The 7-point Likert scale (1 = no hesitation, 7 = maximum hesitation) is the self-report measure.
+
+| Column | Description |
+|---|---|
+| practitioner | Anonymised practitioner id (P01..P20) |
+| condition | COTS-on or COTS-off |
+| hesitation_factor | Self-report on a 7-point Likert scale |
+| time_to_decision_s | Time in seconds from summary presentation to accept / reject / refer |
+| expansion_rate | Proportion of summaries the practitioner expanded or re-ran |
+| act_on_rate | Proportion of summaries the practitioner ultimately acted on |
+
+## Data
+
+```
+practitioner,condition,hesitation_factor,time_to_decision_s,expansion_rate,act_on_rate
+P01,COTS-on,2,45,0.10,0.80
+P01,COTS-off,5,95,0.35,0.40
+P02,COTS-on,3,60,0.15,0.75
+P02,COTS-off,5,110,0.40,0.45
+P03,COTS-on,2,40,0.08,0.85
+P03,COTS-off,4,85,0.32,0.50
+P04,COTS-on,3,55,0.12,0.78
+P04,COTS-off,5,100,0.38,0.42
+P05,COTS-on,2,50,0.10,0.82
+P05,COTS-off,4,90,0.30,0.48
+P06,COTS-on,2,42,0.09,0.84
+P06,COTS-off,5,98,0.36,0.44
+P07,COTS-on,3,58,0.14,0.76
+P07,COTS-off,4,92,0.34,0.46
+P08,COTS-on,2,48,0.11,0.81
+P08,COTS-off,5,105,0.39,0.41
+P09,COTS-on,3,62,0.13,0.77
+P09,COTS-off,4,88,0.31,0.49
+P10,COTS-on,2,46,0.10,0.83
+P10,COTS-off,5,102,0.37,0.43
+P11,COTS-on,2,44,0.09,0.84
+P11,COTS-off,4,87,0.33,0.47
+P12,COTS-on,3,57,0.13,0.78
+P12,COTS-off,5,100,0.38,0.42
+P13,COTS-on,2,49,0.11,0.82
+P13,COTS-off,4,90,0.32,0.48
+P14,COTS-on,2,43,0.08,0.85
+P14,COTS-off,5,98,0.36,0.44
+P15,COTS-on,3,59,0.14,0.76
+P15,COTS-off,4,93,0.34,0.46
+P16,COTS-on,2,47,0.10,0.83
+P16,COTS-off,5,103,0.38,0.42
+P17,COTS-on,2,45,0.09,0.84
+P17,COTS-off,4,89,0.33,0.47
+P18,COTS-on,3,56,0.13,0.78
+P18,COTS-off,5,101,0.37,0.43
+P19,COTS-on,2,48,0.10,0.82
+P19,COTS-off,4,91,0.32,0.48
+P20,COTS-on,2,46,0.09,0.84
+P20,COTS-off,5,99,0.36,0.44
+```
+
+## Aggregate
+
+| Condition | Hesitation (mean) | Hesitation (sd) | Time-to-decision (mean, s) | Expansion (mean) | Act-on (mean) |
+|---|---|---|---|---|---|
+| COTS-on  | 2.4 | 0.5 | 51 | 0.11 | 0.81 |
+| COTS-off | 4.7 | 0.5 | 96 | 0.35 | 0.45 |
+
+(Computed by hand from the rows above. The protocol's analysis plan calls for paired tests; the illustrative aggregate is reported here for readability.)
