@@ -1,4 +1,4 @@
-# Source Engineering -- Case Studies
+# Case Studies
 
 > Evaluated demonstrations and case studies for the Source Engineering discipline.
 
@@ -6,9 +6,9 @@ This repository holds the discipline's empirical evidence. A case study is a doc
 
 ## What is in this repository
 
-- `template.md` -- the canonical template. Every case study follows this structure.
-- `2026-legal-summarization/` -- the discipline's first case study. A worked example in the legal domain.
-- `how-to-file-a-case-study.md` -- the process for contributing a new case study.
+- `template.md` - the canonical template. Every case study follows this structure.
+- `2026-legal-summarization/` - the discipline's first case study. A worked example in the legal domain.
+- `how-to-file-a-case-study.md` - the process for contributing a new case study.
 
 ## How to engage
 
