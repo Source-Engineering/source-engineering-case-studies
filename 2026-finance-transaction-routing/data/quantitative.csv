@@ -1,0 +1,72 @@
+# Quantitative data for the 2026 finance transaction-routing case study
+
+> Illustrative data. The protocol is pre-registered (Source-Engineering/source-engineering-research/protocols/transaction-routing-evaluation.md) but the experiment has not been run. This data is a worked example of the case-study surface, not a record of a real experiment.
+
+## Schema
+
+Each row is one analyst in one condition. Same measure frame as the legal study (Source-Engineering/source-engineering-case-studies/2026-legal-summarization/data/quantitative.csv) plus the finance-domain wrong-route catch rate on the 6 deliberately misrouted probes.
+
+| Column | Description |
+|---|---|
+| analyst | Anonymised analyst id (A01..A20) |
+| condition | COTS-on or COTS-off |
+| hesitation_factor | Self-report on a 7-point Likert scale (1 = no hesitation, 7 = maximum) |
+| time_to_decision_s | Time in seconds from routing presentation to accept / reject / refer |
+| expansion_rate | Proportion of routings the analyst expanded or re-ran |
+| act_on_rate | Proportion of routings the analyst ultimately executed |
+| wrong_route_catch_rate | Proportion of the 6 misrouted probes the analyst flagged before execution |
+
+## Data
+
+```
+analyst,condition,hesitation_factor,time_to_decision_s,expansion_rate,act_on_rate,wrong_route_catch_rate
+A01,COTS-on,2,38,0.08,0.85,0.83
+A01,COTS-off,5,88,0.33,0.38,0.33
+A02,COTS-on,3,52,0.12,0.80,0.67
+A02,COTS-off,5,102,0.38,0.42,0.50
+A03,COTS-on,2,35,0.07,0.88,0.83
+A03,COTS-off,4,80,0.30,0.48,0.33
+A04,COTS-on,3,48,0.11,0.82,0.67
+A04,COTS-off,5,95,0.36,0.40,0.50
+A05,COTS-on,2,42,0.09,0.86,0.83
+A05,COTS-off,4,85,0.28,0.45,0.33
+A06,COTS-on,2,37,0.08,0.87,0.83
+A06,COTS-off,5,92,0.34,0.43,0.50
+A07,COTS-on,3,50,0.12,0.81,0.67
+A07,COTS-off,4,86,0.32,0.44,0.33
+A08,COTS-on,2,41,0.09,0.85,0.83
+A08,COTS-off,5,98,0.37,0.39,0.50
+A09,COTS-on,3,54,0.11,0.80,0.67
+A09,COTS-off,4,82,0.29,0.47,0.33
+A10,COTS-on,2,39,0.08,0.87,0.83
+A10,COTS-off,5,96,0.35,0.41,0.50
+A11,COTS-on,2,36,0.07,0.88,1.00
+A11,COTS-off,4,81,0.31,0.46,0.33
+A12,COTS-on,3,49,0.11,0.82,0.67
+A12,COTS-off,5,94,0.36,0.42,0.50
+A13,COTS-on,2,44,0.10,0.84,0.83
+A13,COTS-off,4,84,0.30,0.45,0.33
+A14,COTS-on,2,38,0.07,0.88,0.83
+A14,COTS-off,5,91,0.34,0.43,0.50
+A15,COTS-on,3,51,0.12,0.80,0.67
+A15,COTS-off,4,89,0.32,0.44,0.33
+A16,COTS-on,2,40,0.08,0.86,0.83
+A16,COTS-off,5,99,0.37,0.40,0.50
+A17,COTS-on,2,37,0.08,0.87,0.83
+A17,COTS-off,4,83,0.30,0.46,0.33
+A18,COTS-on,3,48,0.11,0.81,0.67
+A18,COTS-off,5,97,0.35,0.41,0.50
+A19,COTS-on,2,42,0.09,0.85,0.83
+A19,COTS-off,4,85,0.31,0.45,0.33
+A20,COTS-on,2,39,0.08,0.86,0.83
+A20,COTS-off,5,93,0.34,0.42,0.50
+```
+
+## Aggregate
+
+| Condition | Hesitation (mean) | Hesitation (sd) | Time-to-decision (mean, s) | Expansion (mean) | Act-on (mean) | Wrong-route catch (mean) |
+|---|---|---|---|---|---|---|
+| COTS-on  | 2.4 | 0.5 | 43 | 0.09 | 0.85 | 0.78 |
+| COTS-off | 4.7 | 0.5 | 91 | 0.33 | 0.43 | 0.42 |
+
+(Computed by hand from the rows above; illustrative. Direction matches the legal domain, which is the cross-domain claim Slice 6 tests.)
