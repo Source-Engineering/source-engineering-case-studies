@@ -8,6 +8,7 @@ This repository holds the discipline's empirical evidence. A case study is a doc
 
 - `template.md` - the canonical template. Every case study follows this structure.
 - `2026-legal-summarization/` - the discipline's first case study. A worked example in the legal domain.
+- `2026-finance-transaction-routing/` - the discipline's second case study (Slice 6, cross-domain validation). A worked example in the finance domain, with the cross-domain COTS profile variance doc.
 - `how-to-file-a-case-study.md` - the process for contributing a new case study.
 
 ## How to engage
